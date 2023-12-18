@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/895ffaabf9.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway&display=swap");
+    </style>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel="stylesheet" href="/css/portfolio.css" />
+    <link rel="stylesheet" href="/css/mediaQueryPortfile.css" />
+  </head>
+
+
+
+
+
+
+
+  <body>
+    <nav class="desktopNav">
+      <div class="logo"><span>M</span>aximo <span>C</span>olombo</div>
+
+      <div>
+        <ul class="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#myWork">My Work</a></li>
+          <li><a href="#skills">Technical Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="hamburgerNav">
+      <div class="logo"><span>M</span>aximo <span>C</span>olombo</div>
+      <div class="hamburgerMenu">
+        <div class="hamburgerIcon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menuLinks">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#myWork" onclick="toggleMenu()">My Work</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Technical Skills</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PROFILE -->
+    <section id="profile">
+      <div class="sectionPicContainer">
+        <img src="/img/ColomboFotoGris.png" alt="Maximo Colombo Picture" />
+      </div>
+      <div class="sectionText">
+        <p class="sectionTextP1">Soy</p>
+        <h1 class="title"><span>M</span>aximo <span>C</span>olombo</h1>
+        
+        <p class="sectionTextP2">Full Stack Developer</p>
+        <div class="btnContainer">
+          <button
+            class="btn btnColor2"
+            onclick="window.open('CV-COLOMBO-MAXIMO NEGRO.pdf')"
+          >
+            Descargar CV
+          </button>
+          <button class="btn btnColor1" onclick="location.href = '#contact' ">
+            Contact Me
+          </button>
+        </div>
+        <div class="socialsContainer">
+          <img
+            src="/img/linkedin_black_logo_icon_147114-removebg-preview.png"
+            alt="My Linkedin Profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/maximo-colombo-vicchi/'"
+          />
+          <img
+            src="/img/GitHub_Invertocat_Logo.svg-removebg-preview.png"
+            alt="My GitHub Profile"
+            class="icon"
+            onclick="location.href='https://github.com/MaxiColombo'"
+          />
+        </div>
+      </div>
+      <img
+        src="/img/arrow.png"
+        class="icon arrow"
+        alt="Arrow Icon"
+        onclick="location.href='./#about'"
+      />
+    </section>
+
+    <section id="about">
+      <p class="sectionTextP1">'Git' to Know Me</p>
+      <h1 class="title">About Me</h1>
+      <div class="sectionContainer">
+        <div class="aboutDetailsContainer">
+          <div class="aboutContainers">
+            <div class="detailContainer">
+              <img
+                src="/img/experience.png"
+                class="icon"
+                alt="Experience Icon"
+              />
+              <h3>Experience</h3>
+              <p>2 years</p>
+              <br />
+              <p>Full Stack Developer</p>
+            </div>
+            <div class="detailContainer">
+              <img
+                src="/img/education.png"
+                class="icon"
+                alt="Experience Icon"
+              />
+              <h3>Education</h3>
+              <p>Programming Technical Degree at UTN</p>
+              <br />
+              <p>Full Stack Web Developer at Digital House</p>
+            </div>
+          </div>
+          <p class="textContainer">
+            I am 20 years old, and I have been passionate about programming
+            since I was a child. This passion has driven me to aspire to become
+            a skilled Full Stack developer. I enjoy working collaboratively,
+            sharing knowledge, and my focus is on excellence and ensuring the
+            successful completion of projects on time. I am eager to delve into
+            the professional realm and contribute my skills to the field.
+          </p>
+        </div>
+      </div>
+      <img
+        src="/img/arrow.png"
+        class="icon arrow"
+        alt="Arrow Icon"
+        onclick="location.href='./#myWork'"
+      />
+    </section>
+<!-- MY WORK -->
+
+
+    <section id="myWork">
+      <div class="sectionText">
+        <p class="sectionTextP1">Technical</p>
+        <h1 class="title">Work</h1>
+
+        <div class="workContainer">
+          <div class="workPictureContainer">
+            <div class="blur">
+              <i class="fa-solid fa-arrow-up-right-from-square share"></i>
+              <img
+                src="img/logo_duende.png"
+                class="workPic"
+                alt="Si pinta, pinta picture"
+              />
+              <h2 class="workTitles">Si pinta, pinta</h2>
+            </div>
+            <div class="workDescription">
+              <p>
+                Si Pinta, Pinta is an online store. Crafted with HTML, CSS, and
+                JavaScript on the frontend, backed by MySQL on the backend.
+                Leveraging Node and Express for an efficient user experience.
+              </p>
+            </div>
+          </div>
+
+          <div class="workPictureContainer">
+            <div class="blur">
+              <img
+                src="img/Nave.png"
+                class="workPic"
+                alt="ArcadeGaming Picture"
+              />
+              <h2 class="workTitles">Arcade Gaming</h2>
+            </div>
+            <div class="workDescription">
+              <p>
+                Your Destination for Premier Electronics. Crafted with HTML,
+                CSS, and JavaScript on the frontend, backed by MySQL on the
+                backend. Optimized with Node and Express for an efficient user
+                experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="/img/arrow.png"
+        class="icon arrow"
+        alt="Arrow Icon"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+
+    <section id="skills">
+      <img
+        src="/img/arrowUp.png"
+        class="icon arrowUp"
+        alt="ArrowUp Icon"
+        onclick="location.href='./#myWork'"
+      />
+      <p class="sectionTextP1">Technical</p>
+      <h1 class="title">Skills</h1>
+     
+      <h2 class="techSkills">Front End</h2>
+      <div class="skillsContainer">
+        <div class="skill">
+          <div class="skillWithText">
+            <img
+              src="/img/JavaScript-logo.png"
+              class="skillPic"
+              alt="Logo Javascript"
+            />
+
+            <ul>
+              <li>JSON</li>
+              <li>Promises</li>
+              <li>Asincronía y Callbacks</li>
+              <li>Event-driven programming</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skillWithText">
+            <img src="/img/html5.png" class="skillPic" alt="Logo HTML5" />
+            <img src="/img/css3.png" class="skillPic" alt="Logo CSS3" />
+
+            <ul>
+              <li>Responsive Web Design</li>
+              <li>Flexbox y Grid Layout</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    
+
+      <h2 class="techSkills">Back End</h2>
+      <div class="skillsContainer">
+        <div class="skill">
+          <div class="skillWithText">
+            <img
+              src="/img/MySQL-logo.png"
+              class="skillPic"
+              alt="Logo Javascript"
+            />
+            <ul>
+              <li>Modelado de base de datos relacional</li>
+              <li>SQL (Structured Query Language)</li>
+              <li>Diseño de esquemas de base de datos</li>
+              <li>Operaciones CRUD</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skillWithText">
+            <img src="/img/Expressjs.png" class="skillPic" alt="Logo HTML5" />
+            <img src="/img/Node.js_logo.png" class="skillPic" alt="Logo CSS3" />
+            <ul>
+              <li>RESTful API design</li>
+              <li>Middleware</li>
+              <li>NPM (Node Package Manager)</li>
+              <li>Gestión de dependencias</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skillWithText">
+            <img
+              src="/img/Java-logo.png"
+              class="skillPic"
+              alt="Logo Javascript"
+            />
+            <ul>
+              <li>Programación orientada a objetos</li>
+              <li>Spring Framework</li>
+            </ul>
+            <p class="progress">In progress..</p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="/img/arrow.png"
+        class="icon arrow"
+        alt="Arrow Icon"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <img
+        src="/img/arrowUp.png"
+        class="icon arrowUp"
+        alt="ArrowUp Icon"
+        onclick="location.href='./#skills'"
+      />
+      <p class="sectionTextP1">Get in Touch</p>
+      <h2 class="title">Contact</h2>
+
+      <div class="contactContainer">
+        <div class="formContainer">
+          <form onsubmit="sendEmail() ;reset();return false;" class="contactForm"  autocomplete="off">
+            <div class="formInputs">
+              <p>Your name<span class="required">*</span></p>
+              <input type="text" name="name" required />
+            </div>
+            <div class="formInputs">
+              <p>Your Lastname<span class="required">*</span></p>
+              <input type="text" name="lastname" required />
+            </div>
+            <div class="formInputs">
+              <p>Email<span class="required">*</span></p>
+              <input type="email" name="email" required />
+            </div>
+            <div class="formInputs">
+              <p>Company</p>
+              <input type="text" name="company" />
+            </div>
+            <div class="textAreaForm">
+              <p>
+                Let me know; I'm here to help<span class="required">*</span>
+              </p>
+              <textarea
+                name="clientInfo"
+                cols="30"
+                rows="10"
+                required
+              ></textarea>
+            </div>
+            <button type="submit">Confirm</button>
+          </form>
+        </div>
+        <div class="contactMeContainer">
+          <h3>Call me</h3>
+          <h1>2634753883</h1>
+
+          <h3>Email me</h3>
+          <h1>MAXIMOCOLOMBO2003</h1>
+          <h2>@GMAIL.COM</h2>
+
+          <h3>LinkedIn</h3>
+          <h1>MAXIMO-COLOMBO-VICCHI</h1>
+        </div>
+      </div>
+      <img
+        src="/img/Banner Maximo Colombo LinkedIn Sin Foto.png"
+        class="bannerPic"
+        alt=""
+      />
+    </section>
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+
+        var name = document.getElementsByName('name')[0].value;
+    var lastname = document.getElementsByName('lastname')[0].value;
+    var email = document.getElementsByName('email')[0].value;
+    var company = document.getElementsByName('company')[0].value;
+    var clientInfo = document.getElementsByName('clientInfo')[0].value;
+
+        var emailBody = "Nombre: " + name + "<br>" +
+                    "Apellido: " + lastname + "<br>" +
+                    "Email: " + email + "<br>" +
+                    "Empresa: " + company + "<br>" +
+                    "Mensaje: " + clientInfo;
+
+  Email.send({
+    SecureToken : "a0de6455-33c1-414c-ac22-ad3ffd55ca4a",
+    To : 'maximocolombo2003@gmail.com',
+    From : 'maximocolombo2003@gmail.com',
+    Subject : "New Contact Form",
+    Body : emailBody
+}).then(
+  message => alert(message)
+);
+}
+    </script>
+    <!--  <script src="/js/contact.js"></script> -->
+    <script src="/js/header.js"></script>
+    <script src="/js/myWork.js"></script>
+  </body>
+</html>

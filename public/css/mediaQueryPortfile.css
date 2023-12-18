@@ -1,0 +1,83 @@
+@media screen and (max-width: 1200px) {
+    .desktopNav {
+      display: none;
+    }
+    .hamburgerNav {
+      display: flex;
+    }
+  
+    section {
+      padding-top: 4vh;
+      height: auto; /* Cambia height a auto para permitir que las secciones crezcan según su contenido */
+      margin: 0;
+      box-sizing: border-box;
+      /* height: 96vh; */
+      
+    }
+  
+    /* PROFILE */
+    #profile {
+      gap: 0;
+     padding-top: 0;
+      display: block;
+    }
+  
+    .sectionPicContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 400px; 
+      width: 400px; 
+      margin: 0 auto;
+    }
+  
+    .sectionPicContainer img {
+      max-width: 100%; /* Hace que la imagen sea responsive y no exceda el ancho del contenedor */
+      height: auto;
+    }
+    
+    .arrow {
+        position: absolute;
+    right: 2rem;
+    bottom: 2.5rem;
+    display: none;
+    }
+    .arrowUp{
+        display: none;
+    }
+
+
+    /* ABOUT */
+
+   
+    .aboutContainers{
+        margin-bottom: 2rem;
+        margin-top: 3rem;
+    }
+    .sectionContainer{
+        height: auto;
+        margin: auto 2rem;
+    }
+    .textContainer{
+        width: 60%;
+    }
+    .aboutDetailsContainer{
+        justify-content: center;
+    }
+    
+    /* Contact */
+    .contactContainer{
+        width: 90%;
+    }
+    .contactContainer h1{
+        font-size: 2rem;
+    }
+    .contactContainer h2{
+        font-size: 1.5rem;
+    }
+    .bannerPic{
+        width: 90%;
+    }
+
+
+  }

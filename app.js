@@ -16,6 +16,9 @@ app.get('/', (req, res) => {
   res.render('portfolio'); // Ajusta esto según tus necesidades
 });
 
+app.get('/app.js', (req, res) => {
+  res.sendFile(path.join(__dirname, 'app.js'));
+});
 // Iniciar el servidor
 const port = process.env.PORT || 3320;
 const server = app.listen(port, () => {

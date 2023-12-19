@@ -1,16 +1,16 @@
 # netlify.toml
 
 [build]
-  command = "npm run build"  
-  functions = "netlify/functions"  
-  publish = "public"  
+  command = "npm run build"
+  functions = "netlify/functions"
+  publish = "public"
 
 [[redirects]]
-  
+  # Redirige todas las solicitudes a "portfolio.ejs"
   from = "/*"
-  to = "/index.html"
+  to = "/src/views/portfolio.ejs"
   status = 200
-
+  force = true
 [[headers]]
   
   for = "/public/*"
@@ -18,7 +18,7 @@
     Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
-  
+  # Configura los encabezados para archivos de vista en la carpeta "src/views"
   for = "/src/views/*"
   [headers.values]
-    Cache-Control = "public, max-age=0, must-revalidate"
+    Cache-Control = "public, max-age=86400"  # Almacenar en caché durante 24 horas (86400 segundos)

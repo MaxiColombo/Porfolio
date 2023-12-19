@@ -9,6 +9,10 @@
       {
         "source": "/views/(.*)",
         "destination": "/src/views/$1"
+      },
+      {
+        "source": "/(.*)",
+        "destination": "/src/$1"
       }
     ]
   }

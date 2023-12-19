@@ -2,22 +2,30 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-// Configura EJS como motor de plantillas
+// Configurar EJS como motor de plantillas
 app.set('view engine', 'ejs');
 
-// Vistas 
+// Configurar la carpeta de vistas
 app.set('views', path.join(__dirname, '/src/views'));
 
-// Carpeta arch estaticos
+// Configurar la carpeta de archivos estáticos
 app.use(express.static(path.join(__dirname, 'public')));
 
-
+// Ruta de ejemplo
 app.get('/', (req, res) => {
-  res.render('portfolio'); 
+  res.render('portfolio'); // Ajusta esto según tus necesidades
 });
 
 // Iniciar el servidor
 const port = process.env.PORT || 3320;
-app.listen(port, () => {
+const server = app.listen(port, () => {
   console.log(`Servidor iniciado en http://localhost:${port}`);
+});
+
+// Manejar señales para cerrar el servidor
+process.on('SIGTERM', () => {
+  console.log('Cerrando el servidor...');
+  server.close(() => {
+    console.log('Servidor cerrado correctamente');
+  });
 });

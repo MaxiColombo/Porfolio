@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "build": "npm install && npm run build-prod",
-  "build-prod": "node app.js"
-},
+    "test": "nodemon app.js",
+    "build": "npm install && npm run build-prod",
+    "build-prod": "node app.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
